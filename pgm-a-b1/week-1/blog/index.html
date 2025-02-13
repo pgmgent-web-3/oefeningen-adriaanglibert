@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blogpost titel.</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/">Logo</a>
+
+                <ul>
+                    <li>
+                        <a href="/over">Over ons</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="my.site.be/support">Support</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Blogpost titel</h1>
+
+            <figure>
+                <img src="https://miro.medium.com/v2/resize:fit:756/1*KcQUEkOQ1LoMDHkMZ-Yymw.jpeg"
+                    alt="Meme about sleeping programmer">
+                <figcaption>
+                    All programmers laugh when they see this.
+                </figcaption>
+            </figure>
+
+            <section>
+                <h2>Blogpost titel</h2>
+
+                <p>
+                    Quisque rhoncus ex ut odio fermentum, et iaculis massa tempus.
+                </p>
+
+                <h3>Subtitel</h3>
+
+                <p>
+                    Curabitur sed mollis sem. Proin nisi ex, viverra a magna ultricies, fringilla ullamcorper leo.
+                    Praesent fringilla augue sem, vitae tempor sapien cursus vel. Cras dolor orci, dapibus eget pulvinar
+                    et, feugiat ac dui. Sed mauris dui, viverra non hendrerit sit amet, interdum et erat. Sed urna
+                    ipsum, pharetra quis porta ac, dignissim id ligula.
+                </p>
+
+                <h3>Nog een subtitel</h3>
+
+                <p>
+                    Curabitur sed mollis sem. Proin nisi ex, viverra a magna ultricies, en toen zei Frank <q>Wat was dat
+                        seg!</q>. fringilla ullamcorper leo.
+                    Praesent fringilla augue sem, vitae tempor sapien cursus vel. Cras dolor orci, dapibus eget pulvinar
+                    et, feugiat ac dui. Sed mauris dui, viverra non hendrerit sit amet, interdum et erat. Sed urna
+                    ipsum, pharetra quis porta ac, dignissim id ligula.
+                </p>
+
+                <figure>
+                    <blockquote>
+                        En de overvaller die ging gewoon gaan lopen he!
+                    </blockquote>
+
+                    <figcaption>
+                        Rudi
+                    </figcaption>
+                </figure>
+
+                <small>Dit is geschreven door Adriaan op <time datetime="2025-02-13">donderdag dertien
+                        februari</time>.</small>
+            </section>
+
+            <section>
+                <picture>
+                    <source type="image/webp" srcset="webpee.webp">
+                    <img src="peengee.png" />
+                </picture>
+            </section>
+        </main>
+
+        <aside>
+            <h2 class="sr-only">Gerelateerde artikels</h2>
+            <ul>
+                <li>
+                    <article>
+                        <strong>Gerelateerde titel.</strong>
+
+                        Gerelateerde korte beschrijving.
+
+                        <a href="/">Lees meer</a>
+                    </article>
+                </li>
+            </ul>
+        </aside>
+
+        <section>
+            <form action="/students" method="POST">
+                <label for="firstName">Voornaam</label>
+                <input type="text" id="firstName" name="firstname">
+
+                <label>
+                    <span>Achternaam</span>
+                    <input type="text" name="lastname">
+                </label>
+
+                <fieldset>
+                    <legend>Welke klasgroep?</legend>
+
+                    <label>
+                        A <input value="A" type="radio" name="classgroup" />
+                    </label>
+                    <label>
+                        B <input value="B" type="radio" name="classgroup" />
+                    </label>
+                    <label>
+                        C <input value="C" type="radio" name="classgroup" />
+                    </label>
+                </fieldset>
+
+                <label>
+                    Favo docent
+                    <input type="text" list="teachers" name="favorite_teacher" />
+                </label>
+            </form>
+        </section>
+
+        <footer>
+            Copyright.
+
+            <address>
+                We wonen op Voorbeeldstraat 2.
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="fb.com">Facebook</a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="tiktok.com">TikTok</a>
+                        </li>
+                    </ul>
+                </nav>
+            </address>
+        </footer>
+
+        <section>
+            <details>
+                <summary>Wie ben ik?</summary>
+                <p>Hier wat uitleg.</p>
+            </details>
+            <details>
+                <summary>Waar is campus leeuwstraat</summary>
+                <address>In de leeuwstraat duh</address>
+            </details>
+            <details>
+                <summary>Wanneer is de campus open?</summary>
+                <p>De campus is open van <time datetime="09:00">9 uur</time> tot <time datetime="16:00">16 u</time>.</p>
+            </details>
+        </section>
+
+        <datalist id="teachers">
+            <option>Adriaan</option>
+            <option>Niels</option>
+            <option>Evelien</option>
+        </datalist>
+    </body>
+</html>
