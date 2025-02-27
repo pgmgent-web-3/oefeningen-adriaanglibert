@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .btn {
+                display: inline-flex;
+                padding: 1rem;
+                border-radius: 4px;
+                border: 1px solid red;
+                background-color: pink;
+            }
+
+            .btn--outline {
+                background-color: transparent;
+                color: green;
+            }
+
+            .card__button {
+                justify-self: flex-end;
+            }
+
+        </style>
+    </head>
+    <body>
+        <article class="card">
+            <header class="card__header">
+                <strong class="card__title">Titel van een kaart
+                    <span class="icon icon--small card__icon"></span>
+                </strong>
+            </header>
+            <p class="card__text">Lorem ipsum dolor sit amet.</p>
+            <p class="card__text card__text--small">Subbeschrijving: Lorem ipsum dolor sit amet.</p>
+            <p class="card__text">Subbeschrijving: Lorem ipsum dolor sit amet.</p>
+            <a class="btn btn--outline card__button">Ga naar artikel</a>
+        </article>
+    </body>
+</html>

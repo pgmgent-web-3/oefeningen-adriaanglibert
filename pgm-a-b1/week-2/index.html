@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing</title>
+
+        <link rel="stylesheet" href="src/styles/main.css">
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Pricing</h1>
+                <p>We will offer you the best value.</p>
+                <a class="btn">Get a quote</a>
+            </section>
+
+            <section>
+                <form action="/pricing.php" method="POST">
+                    <fieldset class="step">
+                        <div class="step__header">
+                            <legend class="title step__title">
+                                Change Plan
+                            </legend>
+
+                            <button class="btn btn--transparent step__button" type="button">
+                                Cancel your plan
+                            </button>
+                        </div>
+
+                        <div class="cards">
+                            <input class="cards__radio-input" type="radio" name="plan" value="hobby" id="hobbyInput">
+                            <label class="cards__card" for="hobbyInput">Hobby - 1GB ($5/mo)</label>
+
+                            <input class="cards__radio-input" type="radio" name="plan" value="growth" id="growthInput">
+                            <label class="cards__card" for="growthInput">Growth - 5GB ($10/mo)</label>
+
+                            <input class="cards__radio-input" type="radio" name="plan" value="business"
+                                id="businessInput">
+                            <label class="cards__card" for="businessInput">Business - 10GB ($15/mo)</label>
+
+                            <input class="cards__radio-input" type="radio" name="plan" value="enterprise"
+                                id="enterpriseInput">
+                            <label class="cards__card" for="enterpriseInput">Enterprise - 20GB ($20/mo)</label>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

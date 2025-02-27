@@ -1,0 +1,14 @@
+.btn {
+  display: inline-flex;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid var(--dark);
+  background-color: var(--dark);
+  color: var(--light);
+  border-radius: var(--border-radius-sm);
+}
+
+.btn--transparent {
+  background-color: transparent;
+  color: var(--dark);
+  border: none;
+}

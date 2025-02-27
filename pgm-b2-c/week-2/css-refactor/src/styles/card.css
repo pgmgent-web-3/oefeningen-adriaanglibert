@@ -1,0 +1,18 @@
+.card {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border-radius: var(--border-radius-xl);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.card--secondary {
+  background-color: var(--color-secondary);
+}
+
+.card--two-columns {
+  grid-template-columns: 1fr 1fr;
+}

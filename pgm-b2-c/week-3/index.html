@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accordion</title>
+        <link rel="stylesheet" href="./accordion.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Accessibility</h1>
+            </header>
+
+            <section>
+                <h2>Accordion</h2>
+
+                <div class="accordion">
+                    <!-- First item -->
+                    <button role="heading" aria-expanded="true" aria-controls="content-1" class="accordion__button">
+                        <strong id="heading-1" class="accordion__heading">Heading 1</strong>
+                    </button>
+
+                    <div id="content-1" role="region" aria-labelledby="heading-1" class="accordion__content">
+                        <p>This panel appears when opening this first item.</p>
+                    </div>
+
+                    <!-- Second item -->
+                    <button role="heading" aria-expanded="false" aria-controls="content-2" class="accordion__button">
+                        <strong id="heading-2" class="accordion__heading">Heading 2</strong>
+                    </button>
+
+                    <div id="content-2" role="region" aria-labelledby="heading-2" class="accordion__content">
+                        <p>This panel appears when opening this second item.</p>
+                    </div>
+
+                    <!-- Third item -->
+                    <button role="heading" aria-expanded="false" aria-controls="content-3" class="accordion__button">
+                        <strong id="heading-3" class="accordion__heading">Heading 3</strong>
+                    </button>
+
+                    <div id="content-3" role="region" aria-labelledby="heading-3" class="accordion__content">
+                        <p>This panel appears when opening this third item.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="./accordion.js"></script>
+    </body>
+</html>

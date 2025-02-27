@@ -1,0 +1,17 @@
+.step {
+  border: none;
+  padding: 0;
+}
+
+.step__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-base) 0;
+  border-bottom: 1px solid var(--dark);
+  margin-bottom: var(--spacing-base);
+}
+
+.step__button {
+  margin-right: calc(var(--spacing-sm) * -1);
+}

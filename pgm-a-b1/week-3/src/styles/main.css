@@ -1,0 +1,72 @@
+@import url("./card.css");
+@import url("./container.css");
+@import url("./icon-text.css");
+@import url("./form.css");
+
+:root {
+  --xxs: 0.25rem;
+  --xs: 0.75rem;
+  --sm: 0.875rem;
+  --base: 1rem;
+  --md: 1.125rem;
+  --lg: 1.25rem;
+  --xl: 1.5rem;
+
+  --pink: #f00078;
+  --blue: #b0caff;
+  --grey: #4ff87c;
+  --white: #f6f6f6;
+  --black: #161616;
+
+  --font-size-xs: var(--xs);
+  --font-size-sm: var(--sm);
+  --font-size-base: var(--base);
+  --font-size-md: var(--md);
+  --font-size-lg: var(--lg);
+  --font-size-xl: var(--xl);
+  --font-size-2xl: 2rem;
+
+  --spacing-xs: var(--xxs);
+  --spacing-sm: var(--xs);
+  --spacing-base: var(--base);
+  --spacing-md: var(--md);
+  --spacing-lg: var(--lg);
+  --spacing-xl: var(--xl);
+  --spacing-2xl: 4rem;
+
+  --color-light: var(--white);
+  --color-dark: var(--black);
+  --color-primary: var(--pink);
+  --color-secondary: var(--blue);
+  --color-tertiary: var(--grey);
+
+  --border-radius-base: var(--xxs);
+  --border-radius-xl: var(--xl);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: var(--spacing-base);
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}

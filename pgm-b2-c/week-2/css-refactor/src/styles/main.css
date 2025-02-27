@@ -1,0 +1,48 @@
+@import url("./container.css");
+@import url("./card.css");
+@import url("./icon-text.css");
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --xxs: 0.25rem;
+  --xs: 0.75rem;
+  --sm: 0.875rem;
+  --base: 1rem;
+  --md: 1.125rem;
+  --lg: 1.25rem;
+  --xl: 1.5rem;
+
+  --pink: #f00078;
+  --blue: #b0caff;
+  --grey: #ceffdb;
+  --white: #f6f6f6;
+  --black: #161616;
+
+  --font-size-xs: var(--xs);
+  --font-size-sm: var(--sm);
+  --font-size-base: var(--base);
+  --font-size-md: var(--md);
+  --font-size-lg: var(--lg);
+  --font-size-xl: var(--xl);
+  --font-size-2xl: 2rem;
+
+  --spacing-xs: var(--xxs);
+  --spacing-sm: var(--xs);
+  --spacing-base: var(--base);
+  --spacing-md: var(--md);
+  --spacing-lg: var(--lg);
+  --spacing-xl: var(--xl);
+  --spacing-2xl: 4rem;
+
+  --color-light: var(--white);
+  --color-dark: var(--black);
+  --color-primary: var(--pink);
+  --color-secondary: var(--blue);
+  --color-tertiary: var(--gray);
+
+  --border-radius-base: var(--xxs);
+  --border-radius-xl: var(--xs);
+}

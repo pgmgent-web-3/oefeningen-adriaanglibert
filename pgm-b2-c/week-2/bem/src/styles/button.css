@@ -1,0 +1,21 @@
+.button {
+  display: inline-flex;
+  padding: var(--small) var(--base);
+  border: 1px solid var(--faded);
+  background-color: var(--faded);
+  border-radius: var(--extra-small);
+  color: var(--light);
+
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: var(--light);
+    color: var(--faded);
+  }
+}
+
+.button--transparent {
+  background-color: transparent;
+  color: var(--faded);
+  border: none;
+}

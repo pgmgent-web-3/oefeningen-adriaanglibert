@@ -1,0 +1,9 @@
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-text__title {
+  font-size: var(--font-size-2xl);
+}

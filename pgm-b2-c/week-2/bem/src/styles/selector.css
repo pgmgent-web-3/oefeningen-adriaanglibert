@@ -1,0 +1,23 @@
+.selector {
+  padding: var(--base);
+  border: none;
+}
+
+.selector__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--base) 0;
+  margin-bottom: var(--large);
+  font-weight: 300;
+  color: var(--dark);
+  border-bottom: 1px solid var(--faded);
+}
+
+.selector__title {
+  font-size: var(--medium);
+}
+
+.selector__button {
+  margin-right: calc(var(--base) * -1);
+}
