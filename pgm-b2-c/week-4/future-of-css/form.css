@@ -1,0 +1,25 @@
+.form {
+  & .form__group {
+    & :is(.form__label, .form__input) {
+      color: rgb(182, 182, 182);
+    }
+
+    &:has(.form__input[required]) .form__label::after {
+      content: "*";
+    }
+  }
+}
+
+
+/* Wanneer mijn input een class heeft 'form__input--error', geef mijn button een rode achtergrond. */
+.form:has(.form__input--error) .form__button {
+  background-color: red;
+}
+
+.form__button:focus {
+  outline: none;
+}
+
+.form__button:focus-visible {
+  outline: 5px solid green;
+}

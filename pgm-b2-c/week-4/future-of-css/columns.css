@@ -1,0 +1,24 @@
+.columns {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.wrapper {
+  container-type: inline-size;
+  container-name: column-wrapper;
+
+  & .columns {
+    grid-template-columns: 1fr;
+  }
+
+  @container column-wrapper (min-width: 600px) {
+    & .columns {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

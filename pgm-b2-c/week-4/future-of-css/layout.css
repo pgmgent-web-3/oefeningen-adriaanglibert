@@ -1,0 +1,7 @@
+.layout {
+  --sidebar-width: 200px;
+
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: var(--sidebar-width) 1fr;
+}

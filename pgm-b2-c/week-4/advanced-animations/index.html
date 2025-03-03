@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Animations</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.classless.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <main>
+            <section>
+                <form class="form">
+                    <label class="form__group">
+                        <span class="form__label">E-mail</span>
+                        <input class="form__input" type="email" name="email" required />
+                    </label>
+
+                    <label class="form__group">
+                        <span class="form__label">Bericht</span>
+                        <textarea class="form__input" name="message" required></textarea>
+                    </label>
+
+                    <button>
+                        Versturen
+                    </button>
+                </form>
+            </section>
+
+            <section>
+                <button class="btn btn--focus-visible">Klik hier om het verschil in focus zichtbaar te zien, gebruik ook
+                    tab.</button>
+            </section>
+
+            <section>
+                <ul class="list">
+                    <li class="list__item">Item 1</li>
+                    <li class="list__item">Item 2</li>
+                    <li class="list__item">Item 3</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1 class="title">We excel in <div class="title__list">
+                        <span class="title__item"> webdevelopment</span>
+                        <span class="title__item"> mobile</span>
+                        <span class="title__item"> styling</span>
+                    </div>
+                </h1>
+            </section>
+
+            <section class="columns">
+                <article class="columns__column">
+                    <h2>Korte titel</h2>
+                    <p>Quisque rhoncus ex ut odio fermentum, et iaculis massa tempus.</p>
+                    <a role="button" href="">Call to action</a>
+                </article>
+
+                <article class="columns__column">
+                    <h2>Langere titel met meer inhoud</h2>
+                    <p>Quisque rhoncus ex ut odio fermentum, et iaculis massa tempus. Rhoncus ex ut odio fermentum, et
+                        iaculis massa tempus.</p>
+                    <a role="button" href="">Call to action</a>
+                </article>
+            </section>
+
+            <section class="container">
+                <div class="columns">
+                    <article class="columns__column">
+                        <h2>Kaart 1</h2>
+                        <p>Tekstje in onze kaart.</p>
+                        <a role="button" href="">Call to action</a>
+                    </article>
+
+                    <article class="columns__column">
+                        <h2>Kaart 2</h2>
+                        <p>Tekstje in onze kaart.</p>
+                        <a role="button" href="">Call to action</a>
+                    </article>
+                </div>
+            </section>
+
+            <input type="range" min="100" max="500"
+                oninput="document.body.style.setProperty('--aside-width', this.value + 'px')" />
+
+            <section class="container container--layout">
+                <aside class="sidebar">
+                        Dit is een sidebar
+                </aside>
+
+                <div class="wrapper">
+                    <div class="columns">
+                        <article class="columns__column">
+                            <h2>Kaart 1</h2>
+                            <p>Tekstje in onze kaart.</p>
+                            <a role="button" href="">Call to action</a>
+                        </article>
+
+                        <article class="columns__column">
+                            <h2>Kaart 2</h2>
+                            <p>Tekstje in onze kaart.</p>
+                            <a role="button" href="">Call to action</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

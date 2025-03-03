@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Future of CSS</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <header class="container">
+            <h1>Future of CSS</h1>
+            <p>This is using a variable font.</p>
+        </header>
+
+        <main class="container">
+            <section>
+                <header>
+                    <h2>Pseudo Selectors</h2>
+                </header>
+
+                <form class="form" action="">
+                    <label class="form__group">
+                        <span class="form__label">E-mail</span>
+                        <input class="form__input" type="email" name="email" required />
+                    </label>
+
+                    <label class="form__group">
+                        <span class="form__label">Bericht</span>
+                        <textarea class="form__input form__input--error" name="message" rows="3" required></textarea>
+                    </label>
+
+                    <button class="btn form__button">
+                        Bericht versturen
+                    </button>
+                </form>
+
+                <ul class="list">
+                    <li class="list__item">Maarten</li>
+                    <li class="list__item">Eros</li>
+                    <li class="list__item">Quinten</li>
+                </ul>
+            </section>
+
+            <section class="layout">
+                <aside class="layout__sidebar">
+                    Dit is mijn sidebar
+                </aside>
+
+                <div class="wrapper layout__content">
+                    <div class="columns">
+                        <article class="columns__column">
+                            <strong>Kaart 1</strong>
+                            <p>Dit is wat tekst.</p>
+                            <a role="button" href="/kaart-1">Lees meer</a>
+                        </article>
+
+                        <article class="columns__column">
+                            <strong>Kaart 2</strong>
+                            <p>Dit is wat tekst.</p>
+                            <a role="button" href="/kaart-2">Lees meer</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
