@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Maak een loop zodat deze CSS werkt bij elk child. Gebruik Post CSS. */
+
+@for $i from 1 to 3 {
+  li:nth-child($(i)) {
+    &:after {
+      content: " $(i)";
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import url("./list.css");
+@import url("./grid.css");
+@import url("./card.css");
+@import url("./carousel.css");
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}

@@ -1,0 +1,11 @@
+@import url("./card.css");
+@import url("./grid.css");
+@import url("./carousel.css");
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}

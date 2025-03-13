@@ -1,0 +1,11 @@
+.list__item {
+  list-style-type: disc;
+  padding: 0.25rem;
+
+  &::marker {
+    content: "\f0f3 ";
+    color: yellow;
+    font-size: 1.25rem;
+    font-family: "Font Awesome 6 Free";
+  }
+}

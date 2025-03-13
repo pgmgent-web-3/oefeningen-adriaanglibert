@@ -1,0 +1,31 @@
+@import url("./_form.css");
+@import url("./_btn.css");
+@import url("./_list.css");
+@import url("./_columns.css");
+
+:root {
+  --foreground: #000;
+  --background: #fff;
+  --pico-font-family: "Nunito Sans", sans-serif;
+
+  @media screen and (prefers-color-scheme: dark) {
+    --foreground: #fff;
+    --background: #111;
+  }
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-variation-settings: "wght" 900, "YTLC" 487;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@media print {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (hover: coarse) {
+}

@@ -1,0 +1,9 @@
+.btn {
+  &:focus {
+    border-color: none;
+  }
+
+  &:focus-visible {
+    border-color: rgb(0, 27, 177);
+  }
+}

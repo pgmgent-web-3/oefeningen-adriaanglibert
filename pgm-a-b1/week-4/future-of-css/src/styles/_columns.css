@@ -1,0 +1,21 @@
+.container--columns {
+  --max-w: 800px;
+
+  container-type: inline-size;
+  container-name: column-wrapper;
+  max-width: var(--max-w);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @container column-wrapper (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @container column-wrapper (min-width: 1000px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

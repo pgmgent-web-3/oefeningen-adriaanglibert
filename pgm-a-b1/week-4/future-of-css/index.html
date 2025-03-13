@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Future of CSS</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+        <link rel="stylesheet" href="./src/styles/main.css">
+    </head>
+    <body>
+        <header class="container">
+            <h1>Future of CSS</h1>
+            <p>Learning new and non-official CSS rules and properties.</p>
+        </header>
+
+        <main class="container">
+            <section>
+                <header>
+                    <h2>Pseudo-selectoren</h2>
+                </header>
+
+
+                <h3>Form</h3>
+
+                <form class="form" action="/newsletter" method="POST">
+                    <label class="form__group">
+                        <span class="form__label">E-mail</span>
+                        <input class="form__input" type="email" name="email">
+                    </label>
+
+                    <button class="btn form__button">
+                        Abonneren op nieuwsbrief
+                    </button>
+                </form>
+
+                <h3>Focus Visible</h3>
+
+                <button class="btn">
+                    Focus state test
+                </button>
+
+                <h3>Lijst</h3>
+
+                <ul class="list">
+                    <li class="list__item">Eerste item</li>
+                    <li class="list__item">Tweede item</li>
+                    <li class="list__item">Derde item</li>
+                </ul>
+            </section>
+
+            <!-- <section>
+                <article>
+                    <strong>Kaartje</strong>
+                    <img src="https://picsum.photos/id/684/1200/630" />
+                </article>
+            </section> -->
+
+            <section class="container container--columns">
+                <h2>Nieuwsartikelen</h2>
+
+                <div class="columns">
+                    <article class="card">
+                        <header>Title</header>
+                        <p>Description</p>
+                        <a href="/" role="button">Read more</a>
+                    </article>
+
+                    <article class="card">
+                        <header>Title</header>
+                        <p>Description</p>
+                        <a href="/" role="button">Read more</a>
+                    </article>
+
+                    <article class="card">
+                        <header>Title</header>
+                        <p>Description</p>
+                        <a href="/" role="button">Read more</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

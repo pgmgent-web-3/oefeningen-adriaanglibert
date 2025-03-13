@@ -1,0 +1,13 @@
+.card {
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: antiquewhite;
+  flex-shrink: 0;
+}
+
+.card--subgrid {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: 1 / 3;
+}

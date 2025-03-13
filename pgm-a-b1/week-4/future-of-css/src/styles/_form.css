@@ -1,0 +1,30 @@
+.form {
+  & .form__input {
+    &[required] {
+      border: 1px solid red;
+    }
+  }
+
+  @media screen and (min-width: 756px) {
+    width: 50%;
+  }
+}
+
+/* Elk form label in een form group DIE een form input heeft met required als attribuut. */
+.form__group:has(.form__input[required]) .form__label:after {
+  content: "*";
+}
+
+/* Zorg ervoor dat het formulier zelf een rode rand krijgt wanneer er een input is met een 'foutmelding' - Modifier: form__input--error + De knop wordt ook rood. */
+.form:has(:is(.form__input--error, .form__input:invalid)) {
+  border: 1px solid red;
+}
+
+.form:has(.form__input--error) .form__button,
+.form:has(.form__input--error) .form__input {
+  background-color: red;
+}
+
+.form:has(.form__input--error) :is(.form__button, .form__input) {
+  background-color: red;
+}
