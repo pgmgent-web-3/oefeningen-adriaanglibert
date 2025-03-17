@@ -1,0 +1,58 @@
+@import url("./section.css");
+@import url("./navbar.css");
+@import url("./dialog.css");
+@import url("./animations/fade-in.css");
+@import url("./animations/view-transitions.css");
+
+:root {
+  --navbar-height: 6.25rem;
+
+  --fg-color: black;
+  --bg-color: white;
+
+  --foreground-color: var(--fg-color);
+  --background-color: var(--bg-color);
+
+  @media screen and (prefers-color-scheme: dark) {
+    --foreground-color: var(--bg-color);
+    --background-color: var(--fg-color);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--navbar-height);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  margin-top: var(--navbar-height);
+}
+
+/* Maak een loop zodat deze CSS werkt bij elk child. Gebruik Post CSS. */
+
+@for $i from 1 to 3 {
+  li:nth-child($(i)) {
+    &:after {
+      content: " $(i)";
+    }
+  }
+}

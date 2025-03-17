@@ -1,0 +1,5 @@
+.section {
+  min-height: 100vh;
+  min-height: calc(100svh - var(--navbar-height));
+  padding: 1rem;
+}

@@ -1,0 +1,15 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+
+  opacity: 1;
+  transition: opacity 0.5s ease;
+
+  &::backdrop {
+    background: rgba(38, 38, 38, 0.679);
+  }
+
+  @starting-style {
+    opacity: 0;
+  }
+}

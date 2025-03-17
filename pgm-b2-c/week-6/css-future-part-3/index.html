@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Future Part 3</title>
+        <link rel="stylesheet" href="./dist/main.css">
+    </head>
+    <body style="--fg-color: red; --bg-color: blue;">
+        <header class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="./#about">About</a>
+                    </li>
+                    <li>
+                        <a href="./#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./privacy-policy.html">Privacy</a>
+                    </li>
+                </ul>
+
+                <button id="color-mode-toggle">Toggle Dark Mode</button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section" id="home">
+                <h2 class="fade-in">Home</h2>
+                <p class="fade-in">Lorem ipsum.</p>
+                <a href="./article.html">
+                    <img style="width: 300px; view-transition-name: thumbnail-1;"
+                        src="https://picsum.photos/id/684/300/200" alt="">
+                    Mountain
+                </a>
+            </section>
+
+            <section class="section" id="about">
+                <h2 class="fade-in">About</h2>
+                <p class="fade-in">Lorem ipsum.</p>
+                <button data-target-modal="about">Leer meer over ons</button>
+                <dialog data-modal="about" class="dialog">
+                    <h3>Over ons</h3>
+                    <p>Leer meer over ons.</p>
+                    <button data-close>Close</button>
+                </dialog>
+
+                <button data-target-modal="second">Leer meer!!</button>
+                <dialog data-modal="second" class="dialog">
+                    <h3>Over ons</h3>
+                    <p>Leer meer over ons.</p>
+                    <button data-close>Close</button>
+                </dialog>
+            </section>
+
+            <section class="section" id="contact">
+                <h2 class="fade-in">Contact</h2>
+                <p class="fade-in">Lorem ipsum.</p>
+            </section>
+        </main>
+
+        <script src="./dist/app.js"></script>
+    </body>
+</html>
