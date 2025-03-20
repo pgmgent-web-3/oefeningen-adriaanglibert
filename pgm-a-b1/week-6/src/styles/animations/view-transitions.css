@@ -1,0 +1,39 @@
+@view-transition {
+  navigation: auto;
+}
+
+/*
+::view-transition-group(root) {
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+::view-transition-group(navbar) {
+  animation-duration: 0;
+}
+
+::view-transition-new(root) {
+  animation-name: slideIn;
+}
+::view-transition-old(root) {
+  animation-name: slideOut;
+}
+  */
+
+@keyframes slideIn {
+  from {
+    translate: -100vw 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 100vw 0;
+  }
+}

@@ -1,0 +1,12 @@
+.section {
+  min-height: calc(100vh - var(--navbar-height));
+  min-height: calc(100svh - var(--navbar-height));
+
+  &:nth-child(even) {
+    background-color: burlywood;
+  }
+
+  &:nth-child(odd) {
+    background-color: cadetblue;
+  }
+}

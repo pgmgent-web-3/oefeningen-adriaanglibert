@@ -1,0 +1,7 @@
+.thumbnail {
+  display: block;
+  --dimension: 20rem;
+
+  width: var(--dimension);
+  height: calc(var(--dimension) / 2);
+}

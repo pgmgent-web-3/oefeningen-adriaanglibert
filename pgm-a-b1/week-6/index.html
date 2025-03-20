@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Future</title>
+        <link rel="stylesheet" href="build/main.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <nav>
+                <ul class="navbar__items">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#services">Services</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#contact">Contact</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./detail.html">Detail</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section" id="hero">
+                <h1 class="fade-in">Hero</h1>
+                <a href="./detail.html">
+                    <img style="view-transition-name: hero-image;" src="https://placehold.co/600x400" alt=" ">
+                </a>
+            </section>
+
+            <section class="section" id="services">
+                <h2 class="fade-in">Services</h2>
+
+                <figure class="fade-in" data-scaler>
+                    <input type="range" value="300" min="200" max="600">
+
+                    <img width="300" class="thumbnail" src="https://placehold.co/600x400" alt=" ">
+                </figure>
+            </section>
+
+            <section class="section" id="contact">
+                <h2>Contact</h2>
+                <button data-trigger="contact-modal">Bericht sturen</button>
+
+                <dialog data-modal="contact-modal" class="modal">
+                    <h3>Stuur ons een bericht</h3>
+                    <button data-close>Close</button>
+                </dialog>
+
+                <button popovertarget="toast">Toast</button>
+                <div id="toast" popover>Opslaan gelukt!</div>
+            </section>
+        </main>
+
+        <script src="build/app.js"></script>
+    </body>
+</html>
